@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brian Wafula | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>MY PORTFOLIO</h1>
+  </header>
+
+  <nav>
+    <button onclick="showContent('home')">Home</button>
+    <button onclick="showContent('about')">About</button>
+    <button onclick="showContent('projects')">Projects</button>
+    <button onclick="showContent('resume')">Resume</button>
+    <button onclick="showContent('services')">Services</button>
+    <button onclick="showContent('request')">Request</button>
+    <button onclick="showContent('certifications')">Certifications</button>
+    <button onclick="showContent('contact')">Contact</button>
+    
+
+  </nav>
+
+  <section id="home" class="content active">
+    <h2>Welcome to My Portfolio</h2>
+    <img src="images/bryn.jpg" alt="Brian Wafula" class="profile-img">
+    <p>Hi, I'm <strong>Brian Wafula</strong> — a cybersecurity enthusiast with a passion for ethical hacking, cloud security, and secure network architecture.</p>
+    <p>I specialize in penetration testing using tools like Kali Linux and enjoy building lab environments that simulate real-world attack scenarios.</p>
+    <p>I'm also a creative graphic designer, experienced in Figma, Canva, and Photoshop — combining technical skills with visual communication. Additionally, I explore Python programming, database management, and networking through hands-on projects.</p>
+  </section>
+
+  <section id="about" class="content">
+    <img src="images/bry01.jpeg" alt="Blank image" class="about-img">
+    <h2>About Me</h2>
+    <p>I’m a cybersecurity enthusiast and designer with a focus on ethical hacking and visual storytelling.</p>
+    <h3>Education Background</h3>
+    <p><strong>Karatina University</strong></p>
+    <p>Bachelor of Science in Information Technology</p>
+    <p>Expected Graduation: 2026</p>
+    <p>Age: 22</p>
+  </section>
+
+  <section id="projects" class="content">
+    <h2>My Projects</h2>
+    <ul>
+      <li><strong>Portfolio</strong> - <a href="https://github.com/Wafula206/portifolio" target="_blank">View on GitHub</a></li>
+      <li><strong>School Management System</strong> - <a href="https://github.com/Wafula206/school-management-system" target="_blank">View on GitHub</a></li>
+      <li><strong>Class Management System</strong> - <a href="https://github.com/Wafula206/class_management" target="_blank">View on GitHub</a></li>
+      <li><strong>Loan Approval System</strong> - <a href="https://github.com/Wafula206/loan_approval" target="_blank">View on GitHub</a></li>
+      <li><strong>Networking Concepts</strong> - <a href="https://github.com/Wafula206/networking_concept" target="_blank">View on GitHub</a></li>
+      <li><strong>Chatbot</strong> - <a href="https://github.com/Wafula206/chatbot" target="_blank">View on GitHub</a></li>
+      <li><strong>Penetration Testing Lab</strong> - <span>🔒 Private Repository</span></li>
+    </ul>
+  </section>
+
+  <section id="resume" class="content">
+    <h2>My Resume</h2>
+    <p style="color: blue;">You can download my full resume below or scroll through the highlights.</p>
+    <a href="assets/BRIAN_RESUME_UPDATE.pdf" target="_blank">Download Resume (PDF)</a>
+  </section>
+
+  <section id="services" class="content">
+    <h2>My Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Penetration Testing</h3>
+        <p>I simulate real-world cyberattacks to identify vulnerabilities in systems and networks using tools like Kali Linux.</p>
+      </div>
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Creating responsive and modern websites using HTML, CSS, JavaScript, and GitHub Pages.</p>
+      </div>
+      <div class="service-card">
+        <h3>Graphic Design</h3>
+        <p>Designing logos, posters, and social media graphics using tools like Canva, Figma, and Photoshop.</p>
+      </div>
+      <div class="service-card">
+        <h3>Database Management</h3>
+        <p>Handling database design, queries, and maintenance with MySQL and PostgreSQL.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="request" class="content">
+    <h2>Request a Service</h2>
+    <form class="request-form" action="mailto:wafulabrian206@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="service">Service Needed:</label>
+      <select id="service" name="service" required>
+        <option value="">--Select--</option>
+        <option value="Penetration Testing">Penetration Testing</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Database Management">Database Management</option>
+      </select>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+  
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+  
+  <section id="contact" class="content">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:wafulabrian206@gmail.com">wafulabrian206@gmail.com</a></p>
+    <p>Phone: +254 798 532 947</p>
+    <p>GitHub: <a href="https://github.com/Wafula206" target="_blank">Wafula206</a></p>
+  </section>
+
+  <section id="certifications" class="content">
+    <h2>My Certifications</h2>
+    <ul class="certification-list">
+      <li>
+        <strong>English for IT 1</strong> <br>
+        <a href="assets/english.pdf" target="_blank">View Certificate</a>
+      </li>
+      <li>
+        <strong>Ethical Hacker</strong> <br>
+        <a href="assets/ethical.pdf" target="_blank">View Certificate</a>
+      </li>
+      <li>
+        <strong>Junior Cybersecurity Analyst Career Path</strong><br>
+        <a href="assets/junior_sec.pdf" target="_blank">View Certificate</a>
+      </li>
+      <li>
+        <strong>Introduction to Cybersecurity</strong> <br>
+        <a href="assets/intro_sec.pdf" target="_blank">View Certificate</a>
+      </li>
+      <li>
+        <strong>International Conference on Sustainable Knowledge Systems</strong> <br>
+        <a href="assets/ICSKS.pdf" target="_blank">View Certificate</a>
+      </li>
+    </ul>
+  </section>
+  
+  
+
+  <footer>
+    <p>&copy; 2025 Brian Wafula. All rights reserved.</p>
+  </footer>
+
+  <div class="social-humor">
+    <div class="social-links">
+      <a href="https://wa.me/254798532947" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Me</a>
+      <a href="http://www.linkedin.com/in/brian-wafula-b5896b254" target="_blank"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
+    </div>
+    <p id="random-joke" class="humor">Loading a joke...</p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
