@@ -57,3 +57,5 @@ window.addEventListener('DOMContentLoaded', () => {
   const randomIndex = Math.floor(Math.random() * jokes.length);
   jokeEl.textContent = jokes[randomIndex];
 });
+
+document.addEventListener('contextmenu', event => event.preventDefault());
