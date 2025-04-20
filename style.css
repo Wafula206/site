@@ -218,3 +218,26 @@ body {
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
   }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+  
+  .skills-grid div {
+    background: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .skills-grid ul {
+    padding-left: 1.2em;
+  }
+  
+  .skills-grid h3 {
+    margin-top: 0;
+    color: #004080;
+  }
+  
