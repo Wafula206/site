@@ -1,268 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brian Wafula | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Brian Wafula - IT Student @ Karatina University | Cybersecurity Enthusiast, Programmer & Designer">
+    <meta name="keywords" content="Brian Wafula, Cybersecurity, Programming, Portfolio, Karatina University">
+    <meta name="author" content="Brian Wafula">
+    <title>Brian Wafula | IT Student & Cybersecurity Enthusiast</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
-    <h1><img src="images/sec1.png" alt="icon show" style="height: 30px; vertical-align: middle;"> MY PORTFOLIO</h1>
-    <nav class="nav-links">
-      <button onclick="showContent('home')">Home</button>
-      <button onclick="showContent('about')">About</button>
-      <button onclick="showContent('skills')">Skills</button>
-      <button onclick="showContent('projects')">Projects</button>
-      <button onclick="showContent('resume')">Resume</button>
-      <button onclick="showContent('services')">Services</button>
-      <button onclick="showContent('request')">Request</button>
-      <button onclick="showContent('certifications')">Certifications</button>
-      <button onclick="showContent('contact')">Contact</button>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home" class="content active">
-      <h2>Welcome to My Portfolio</h2>
-      <img src="images/bryn.jpg" alt="Brian Wafula" class="profile-img">
-      <p>Hi, I'm <strong>Brian Wafula</strong> — a cybersecurity enthusiast with a passion for ethical hacking, cloud security, and secure network architecture.</p>
-      <p>I specialize in penetration testing using tools like Kali Linux and enjoy building lab environments that simulate real-world attack scenarios.</p>
-      <p>I'm also a creative graphic designer, experienced in Figma, Canva, and Photoshop — combining technical skills with visual communication. Additionally, I explore Python programming, database management, and networking through hands-on projects.</p>
-    </section>
-<section id="about" class="content">
-  <h2>About Me</h2>
-  <div class="about-container">
-    <img src="images/bry01.jpeg" alt="Brian Wafula" class="about-img">
-    <div class="about-text">
-      <p>
-        👋 Hi, I'm <strong>Brian Wafula</strong> — a passionate cybersecurity enthusiast and creative designer. I love solving problems, building secure systems, and telling stories through design.
-      </p>
-      <ul>
-        <li><strong>Education:</strong> BSc. Information Technology, Expected 2026</li>
-        <li><strong>University:</strong> K.U</li>
-        <li><strong>Age:</strong> 23</li>
-      </ul>
-      <p>
-        I thrive on continuous learning and enjoy collaborating with others to create impactful solutions. Let’s connect or check out my <a href="#resume">resume</a>!
-      </p>
+<!-- ============================================
+     NAVIGATION BAR
+============================================ -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+    <a href="#home">
+        <img src="images/logo.png" alt="BW" class="logo-img">
+    </a>
+</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
-  </div>
+</nav>
+
+<!-- ============================================
+     HERO SECTION
+============================================ -->
+<header id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="images/bryn.jpg" alt="Brian Wafula - Cybersecurity & IT Professional" class="hero-profile-img">
+                <div class="hero-image-badge">
+                    <span class="status-dot"></span> Open for work
+                </div>
+            </div>
+            <div class="hero-badge">
+                <span class="badge-text">✦ Available for Opportunities</span>
+            </div>
+            <h1 class="hero-title">
+                Building <span class="gradient-text">Secure</span> Systems<br>
+                With <span class="gradient-text">Purpose</span>
+            </h1>
+            <p class="hero-description">
+                I'm Brian Wafula — a final-year IT student at Karatina University who codes, secures, and designs. 
+                Most developers make things work. I make them work <strong>securely</strong> and look <strong>exceptional</strong>.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work <span class="btn-arrow">→</span></a>
+                <a href="#contact" class="btn btn-outline">Let's Connect</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-number">10+</span><span class="stat-label">Projects</span></div>
+                <div class="stat"><span class="stat-number">5+</span><span class="stat-label">Tech Stacks</span></div>
+                <div class="stat"><span class="stat-number">2026</span><span class="stat-label">Graduation</span></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- ============================================
+         ABOUT SECTION
+    ============================================ -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2>Who Am I?</h2>
+                <p class="section-subtitle">Get to know the person behind the code</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>👋 Hi, I'm <strong>Brian Wafula</strong> — a passionate cybersecurity enthusiast and creative designer. I love solving problems, building secure systems, and telling stories through design.</p>
+                    
+                    <br>
+                    
+                    <p><strong>🎓 Education:</strong> BSc. Information Technology (Programming Major), Karatina University — Expected 2026</p>
+                    <p><strong>📍 Location:</strong> Kenya</p>
+                    <p><strong>🎯 Status:</strong> Final Year Student</p>
+                    
+                    <br>
+                    
+                    <p>I thrive on continuous learning and enjoy collaborating with others to create impactful solutions. I specialize in penetration testing using tools like Kali Linux and enjoy building lab environments that simulate real-world attack scenarios.</p>
+                    
+                    <br>
+                    
+                    <p>I'm also a creative graphic designer, experienced in Figma, Canva, and Photoshop — combining technical skills with visual communication. Additionally, I explore Python programming, database management, and networking through hands-on projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SKILLS SECTION
+    ============================================ -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Expertise</span>
+                <h2>What I Bring to the Table</h2>
+                <p class="section-subtitle">A unique combination of technical and creative skills</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>🛡️ Cybersecurity</h3>
+                    <ul>
+                        <li>Penetration Testing (Kali Linux)</li>
+                        <li>Ethical Hacking</li>
+                        <li>Network Security</li>
+                        <li>Cybersecurity Labs</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>💻 Tech & Development</h3>
+                    <ul>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Python & Django (REST Framework)</li>
+                        <li>Database Management</li>
+                        <li>Git & GitHub</li>
+                       <li>API Integration & Development</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>🎨 Design & Creativity</h3>
+                    <ul>
+                        <li>Figma, Canva, Photoshop</li>
+                        <li>UI Design & Branding</li>
+                        <li>Visual Communication</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>🎓 Soft Skills</h3>
+                    <ul>
+                        <li>Communication & Teamwork</li>
+                        <li>Continuous Learning</li>
+                        <li>Problem-Solving</li>
+                        <li>Critical Thinking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROJECTS SECTION (CLEANED & ORGANIZED)
+    ============================================ -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2>Featured Projects</h2>
+                <p class="section-subtitle">Real solutions to real problems</p>
+            </div>
+
+<!-- EcoStore Project Card  -->
+<div class="project-card featured">
+    <h3>🌿 EcoStore - Sustainable E-Commerce Platform</h3>
+    <p>A fully functional e-commerce platform featuring product browsing, shopping cart, user authentication, and secure checkout. Built with Django REST Framework and integrated with external APIs for payment processing and product data.</p>
+    
+    <div class="project-tech">
+        <span>Python</span>
+        <span>Django</span>
+        <span>Django REST Framework</span>
+        <span>HTML/CSS/JS</span>
+        <span>APIs</span>
+        <span>Render</span>
+    </div>
+    
+    <div class="project-links">
+        <a href="https://github.com/Wafula206/ecostore" target="_blank" class="btn-small">
+            <i class="fab fa-github"></i> GitHub →
+        </a>
+        <a href="https://ecostore-xpa3.onrender.com" target="_blank" class="btn-small demo-link">
+            <i class="fas fa-external-link-alt"></i> Live Demo →
+        </a>
+    </div>
+    
+    <div class="deploy-note">
+        <i class="fas fa-clock"></i> Free hosting: first load may take 30-60 seconds to wake up
+    </div>
+</div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Employee Management System</h3>
+                    <p>A web app for managing employee records, attendance, and payroll. Built with Python, Django, and PostgreSQL. Features secure authentication and user-friendly dashboards.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/Wafula206/Employee_management_system" target="_blank" class="btn-small">View on GitHub →</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Penetration Testing Lab</h3>
+                    <p>A virtual lab for ethical hacking and penetration testing. Includes simulated networks and vulnerable machines for hands-on cybersecurity training.</p>
+                    <div class="project-tech">
+                        <span>VirtualBox</span>
+                        <span>Kali Linux</span>
+                        <span>Metasploitable</span>
+                    </div>
+                    <a href="https://github.com/Wafula206/pentesting_lab" target="_blank" class="btn-small">View on GitHub →</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>SmartPre</h3>
+                    <p>An educational platform for revision of learning materials. Enables educators to upload content and students to access quizzes and resources.</p>
+                    <div class="project-tech">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/Wafula206/smartprep" target="_blank" class="btn-small">View on GitHub →</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Loan Approval System</h3>
+                    <p>A machine learning-based system for automating loan approval decisions. Analyzes applicant data to predict approval outcomes.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <a href="https://github.com/Wafula206/loan_approval" target="_blank" class="btn-small">View on GitHub →</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>School Management System</h3>
+                    <p>A system for managing school operations, including student records, classes, and staff. Streamlines administrative tasks.</p>
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                    <a href="https://github.com/Wafula206/school-management-system" target="_blank" class="btn-small">View on GitHub →</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Chatbot</h3>
+                    <p>An interactive chatbot built with Python for answering user queries and automating simple tasks.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>NLP</span>
+                    </div>
+                    <a href="https://github.com/Wafula206/chatbot" target="_blank" class="btn-small">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES SECTION
+    ============================================ -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Offer</span>
+                <h2>Services & Expertise</h2>
+                <p class="section-subtitle">How I can help you</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🔒 Penetration Testing</h3>
+                    <p>I simulate real-world cyberattacks to identify vulnerabilities in systems and networks using tools like Kali Linux.</p>
+                </div>
+                <div class="service-card">
+                    <h3>💻 Web Development</h3>
+                    <p>Creating responsive and modern websites using HTML, CSS, JavaScript, and GitHub Pages.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🎨 Graphic Design</h3>
+                    <p>Designing logos, posters, and social media graphics using tools like Canva, Figma, and Photoshop.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🗄️ Database Management</h3>
+                    <p>Handling database design, queries, and maintenance with MySQL and PostgreSQL.</p>
+                </div>
+
+               <div class="service-card">
+                  <h3>🔌 API Development & Integration</h3>
+                  <p>Building RESTful APIs with Django REST Framework and integrating third-party services (payment, data, auth).</p>
+              </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+     GRAPHIC DESIGN PORTFOLIO SECTION
+============================================ -->
+<section id="design" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Creative Work</span>
+            <h2>Graphic Design Portfolio</h2>
+            <p class="section-subtitle">Branding, social media graphics, and digital illustrations</p>
+        </div>
+        <div style="text-align: center;">
+            <a href="https://sites.google.com/d/1T9SssjzNBz79wgWeviItoX0IC6b33CRh/p/1cf2D-HHCMEpsnOfK3R0LAURqWz5CZWC6/edit" target="_blank" class="btn btn-primary">
+                <i class="fas fa-external-link-alt"></i> Open Design Portfolio →
+            </a>
+        </div>
+    </div>
 </section>
 
-    <section id="skills" class="content">
-      <img src="images/sec1.png" alt="Brian Wafula" class="profile-img">
-      <h2>My Skills</h2>
-      <div class="skills-grid">
-        <div>
-          <h3>🛡️ Cybersecurity</h3>
-          <ul>
-            <li>Penetration Testing (Kali Linux)</li>
-            <li>Ethical Hacking</li>
-            <li>Network Security</li>
-            <li>Cybersecurity Labs</li>
-          </ul>
+    <!-- ============================================
+         CERTIFICATIONS SECTION
+    ============================================ -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Credentials</span>
+                <h2>Certifications</h2>
+                <p class="section-subtitle">Continuous learning & professional development</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>English for IT 1</h3>
+                    <a href="assets/english.pdf" target="_blank" class="btn-small">View Certificate →</a>
+                </div>
+                <div class="skill-card">
+                    <h3>Ethical Hacker</h3>
+                    <a href="assets/ethical.pdf" target="_blank" class="btn-small">View Certificate →</a>
+                </div>
+                <div class="skill-card">
+                    <h3>Junior Cybersecurity Analyst</h3>
+                    <a href="assets/junior_sec.pdf" target="_blank" class="btn-small">View Certificate →</a>
+                </div>
+                <div class="skill-card">
+                    <h3>Introduction to Cybersecurity</h3>
+                    <a href="assets/intro_sec.pdf" target="_blank" class="btn-small">View Certificate →</a>
+                </div>
+                <div class="skill-card">
+                    <h3>International Conference on Sustainable Knowledge Systems</h3>
+                    <a href="assets/ICSKS.pdf" target="_blank" class="btn-small">View Certificate →</a>
+                </div>
+            </div>
         </div>
-        <div>
-          <h3>💻 Tech & Development</h3>
-          <ul>
-            <li>HTML, CSS, JS</li>
-            <li>GitHub & Hosting</li>
-            <li>Python Programming</li>
-            <li>Database Management</li>
-          </ul>
-        </div>
-        <div>
-          <h3>🎨 Design & Creativity</h3>
-          <ul>
-            <li>Figma, Canva, Photoshop</li>
-            <li>UI Design & Branding</li>
-          </ul>
-        </div>
-        <div>
-          <h3>🎓 Soft Skills</h3>
-          <ul>
-            <li>Communication & Teamwork</li>
-            <li>Continuous Learning</li>
-            <li>Problem-Solving</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    <section id="projects" class="content">
-      <h2>My Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="images/employee_mgmt.png" alt="Employee Management System Screenshot" class="project-img">
-          <h3>Employee Management System</h3>
-          <p>
-            A web app for managing employee records, attendance, and payroll. Built with Python, Django, and PostgreSQL. Features secure authentication and user-friendly dashboards.
-          </p>
-          <a href="https://github.com/Wafula206/Employee_management_system" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <img src="images/pentest_lab.png" alt="Penetration Testing Lab Screenshot" class="project-img">
-          <h3>Penetration Testing Lab</h3>
-          <p>
-            A virtual lab for ethical hacking and penetration testing. Includes simulated networks and vulnerable machines for hands-on cybersecurity training.<br>
-            <strong>Setup:</strong> VirtualBox, Windows 10, Metasploitable2, pfSense firewall.
-          </p>
-          <a href="https://github.com/Wafula206/pentesting_lab" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <img src="images/smartpre.png" alt="SmartPre Screenshot" class="project-img">
-          <h3>SmartPre</h3>
-          <p>
-            An educational platform for revision of learning materials. Enables educators to upload content and students to access quizzes and resources for effective study and exam preparation.
-          </p>
-          <a href="https://github.com/Wafula206/smartprep" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <img src="images/sec2.jpeg" alt="Portfolio Screenshot" class="project-img">
-          <h3>Portfolio</h3>
-          <p>
-            This personal portfolio website showcasing my skills, projects, and certifications. Designed with HTML, CSS, and JavaScript.
-          </p>
-          <a href="https://github.com/Wafula206/site" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>School Management System</h3>
-          <p>
-            A system for managing school operations, including student records, classes, and staff. Streamlines administrative tasks for educators and administrators.
-          </p>
-          <a href="https://github.com/Wafula206/school-management-system" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>Class Management System</h3>
-          <p>
-            A tool for organizing class schedules, assignments, and student progress. Designed to help teachers and students manage coursework efficiently.
-          </p>
-          <a href="https://github.com/Wafula206/class_management" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>Loan Approval System</h3>
-          <p>
-            A machine learning-based system for automating loan approval decisions. Analyzes applicant data to predict approval outcomes.
-          </p>
-          <a href="https://github.com/Wafula206/loan_approval" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>Networking Concepts</h3>
-          <p>
-            A collection of networking labs and documentation for learning core networking principles and protocols.
-          </p>
-          <span>🔒 Private Repository</span>
-        </div>
-        <div class="project-card">
-          <h3>Chatbot</h3>
-          <p>
-            An interactive chatbot built with Python for answering user queries and automating simple tasks.
-          </p>
-          <a href="https://github.com/Wafula206/chatbot" target="_blank">View on GitHub</a>
-        </div>
-      </div>
     </section>
 
-    <section id="resume" class="content">
-      <h2>My Resume</h2>
-      <p style="color: blue;">You can download my full resume below or scroll through the highlights.</p>
-      <a href="assets/RESUME_UPDATE.pdf" target="_blank">Download Resume (PDF)</a>
-    </section>
-
-    <section id="services" class="content">
-      <h2>My Services</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>Penetration Testing</h3>
-          <p>I simulate real-world cyberattacks to identify vulnerabilities in systems and networks using tools like Kali Linux.</p>
+    <!-- ============================================
+         RESUME SECTION
+    ============================================ -->
+    <section id="resume" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Download</span>
+                <h2>My Resume</h2>
+                <p class="section-subtitle">Get the full picture of my professional journey</p>
+            </div>
+            <div style="text-align: center;">
+                <a href="assets/RESUME _UPDATE.pdf" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-download"></i> Download Resume (PDF)
+                </a>
+            </div>
         </div>
-        <div class="service-card">
-          <h3>Web Development</h3>
-          <p>Creating responsive and modern websites using HTML, CSS, JavaScript, and GitHub Pages.</p>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+    ============================================ -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2>Let's Connect</h2>
+                <p class="section-subtitle">Have a project in mind? Let's talk</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:wafulabrian206@gmail.com">wafulabrian206@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+254798532947">+254 798 532 947</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/Wafula206" target="_blank">github.com/Wafula206</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="http://www.linkedin.com/in/brian-wafula-b5896b254" target="_blank">LinkedIn Profile</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254798532947" target="_blank">WhatsApp</a></p>
+                </div>
+            </div>
         </div>
-        <div class="service-card">
-          <h3>Graphic Design</h3>
-          <p>Designing logos, posters, and social media graphics using tools like Canva, Figma, and Photoshop.</p>
+    </section>
+</main>
+
+<!-- ============================================
+     FOOTER
+============================================ -->
+<footer>
+    <div class="container">
+        <div class="footer-socials">
+            <a href="https://wa.me/254798532947" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="http://www.linkedin.com/in/brian-wafula-b5896b254" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Wafula206" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:wafulabrian206@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
-        <div class="service-card">
-          <h3>Database Management</h3>
-          <p>Handling database design, queries, and maintenance with MySQL and PostgreSQL.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="request" class="content">
-      <h2>Request a Service</h2>
-      <form class="request-form" action="mailto:wafulabrian206@gmail.com" method="POST" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="service">Service Needed:</label>
-        <select id="service" name="service" required>
-          <option value="">--Select--</option>
-          <option value="Penetration Testing">Penetration Testing</option>
-          <option value="Web Development">Web Development</option>
-          <option value="Graphic Design">Graphic Design</option>
-          <option value="Database Management">Database Management</option>
-        </select>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Submit Request</button>
-      </form>
-    </section>
-
-    <section id="certifications" class="content">
-      <h2>My Certifications</h2>
-      <ul class="certification-list">
-        <li>
-          <strong>English for IT 1</strong><br>
-          <a href="assets/english.pdf" target="_blank">View Certificate</a>
-        </li>
-        <li>
-          <strong>Ethical Hacker</strong><br>
-          <a href="assets/ethical.pdf" target="_blank">View Certificate</a>
-        </li>
-        <li>
-          <strong>Junior Cybersecurity Analyst Career Path</strong><br>
-          <a href="assets/junior_sec.pdf" target="_blank">View Certificate</a>
-        </li>
-        <li>
-          <strong>Introduction to Cybersecurity</strong><br>
-          <a href="assets/intro_sec.pdf" target="_blank">View Certificate</a>
-        </li>
-        <li>
-          <strong>International Conference on Sustainable Knowledge Systems</strong><br>
-          <a href="assets/ICSKS.pdf" target="_blank">View Certificate</a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="contact" class="content">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:wafulabrian206@gmail.com">wafulabrian206@gmail.com</a></p>
-      <p>Phone: +254 798 532 947</p>
-      <p>GitHub: <a href="https://github.com/Wafula206" target="_blank">Wafula206</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-socials">
-      <a href="https://wa.me/254798532947" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="http://www.linkedin.com/in/brian-wafula-b5896b254" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Wafula206" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="mailto:wafulabrian206@gmail.com"><i class="fas fa-envelope"></i></a>
+        <p>&copy; 2026 Brian Wafula. All rights reserved.</p>
     </div>
-    <p>&copy; 2025 Brian Wafula. All rights reserved.</p>
-  </footer>  
-  <script src="script.js"></script>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
 </body>
 </html>
