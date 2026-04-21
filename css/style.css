@@ -836,3 +836,17 @@ footer p {
         height: 32px;
     }
 }
+
+/* Project card image styling */
+.project-card img {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.01);
+}
+
+/* Proof links hover effect */
+.project-card a[href*=".jpg"]:hover {
+    opacity: 0.8;
+}
