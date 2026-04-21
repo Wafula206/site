@@ -84,34 +84,56 @@
     <!-- ============================================
          ABOUT SECTION
     ============================================ -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">About Me</span>
-                <h2>Who Am I?</h2>
-                <p class="section-subtitle">Get to know the person behind the code</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>👋 Hi, I'm <strong>Brian Wafula</strong> — a passionate cybersecurity enthusiast and creative designer. I love solving problems, building secure systems, and telling stories through design.</p>
-                    
-                    <br>
-                    
-                    <p><strong>🎓 Education:</strong> BSc. Information Technology (Programming Major), Karatina University — Expected 2026</p>
-                    <p><strong>📍 Location:</strong> Kenya</p>
-                    <p><strong>🎯 Status:</strong> Final Year Student</p>
-                    
-                    <br>
-                    
-                    <p>I thrive on continuous learning and enjoy collaborating with others to create impactful solutions. I specialize in penetration testing using tools like Kali Linux and enjoy building lab environments that simulate real-world attack scenarios.</p>
-                    
-                    <br>
-                    
-                    <p>I'm also a creative graphic designer, experienced in Figma, Canva, and Photoshop — combining technical skills with visual communication. Additionally, I explore Python programming, database management, and networking through hands-on projects.</p>
+   <section id="about" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">About Me</span>
+            <h2>Who Am I?</h2>
+            <p class="section-subtitle">Get to know the person behind the code</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <!-- Your original intro - kept exactly -->
+                <p>👋 Hi, I'm <strong>Brian Wafula</strong> — a passionate cybersecurity enthusiast and creative designer. I love solving problems, building secure systems, and telling stories through design.</p>
+                
+                <!-- Quick Info Grid (clean, no extra wording) -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin: 25px 0; padding: 20px; background: #f8f9fa; border-radius: 12px;">
+                    <div>
+                        <strong>🎓 Education</strong><br>
+                        <span style="font-size: 14px; color: #555;">BSc IT (Programming Major), Karatina University — Expected 2026</span>
+                    </div>
+                    <div>
+                        <strong>📍 Location</strong><br>
+                        <span style="font-size: 14px; color: #555;">Kenya</span>
+                    </div>
+                    <div>
+                        <strong>🎯 Status</strong><br>
+                        <span style="font-size: 14px; color: #555;">Final Year Student</span>
+                    </div>
+                </div>
+                
+                <!-- Your original paragraphs - kept exactly -->
+                <p>I thrive on continuous learning and enjoy collaborating with others to create impactful solutions. I specialize in penetration testing using tools like Kali Linux and enjoy building lab environments that simulate real-world attack scenarios.</p>
+                
+                <p>I'm also a creative graphic designer, experienced in Figma, Canva, and Photoshop — combining technical skills with visual communication. Additionally, I explore Python programming, database management, and networking through hands-on projects.</p>
+                
+                <!-- Hands-On Experience Box (clean, no extra fluff) -->
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-top: 25px; border-left: 4px solid #007bff;">
+                    <strong style="font-size: 16px;">🎯 Hands-On Cybersecurity Experience:</strong>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 10px 0;">
+                        <span style="background: #e8f0fe; padding: 4px 12px; border-radius: 20px; font-size: 13px;">SQL Injection</span>
+                        <span style="background: #e8f0fe; padding: 4px 12px; border-radius: 20px; font-size: 13px;">SSTI</span>
+                        <span style="background: #e8f0fe; padding: 4px 12px; border-radius: 20px; font-size: 13px;">Forensics</span>
+                        <span style="background: #e8f0fe; padding: 4px 12px; border-radius: 20px; font-size: 13px;">Cryptography</span>
+                    </div>
+                    <p style="margin: 8px 0;"><strong>Active Platforms:</strong> PortSwigger (15+ labs) | TryHackMe (Level 5) | picoCTF</p>
+                    <p><strong>Daily Tools:</strong> Burp Suite | Nmap | Netcat | CyberChef | Nikto | Zteg</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ============================================
          SKILLS SECTION
@@ -128,8 +150,9 @@
                     <h3>🛡️ Cybersecurity</h3>
                     <ul>
                         <li>Penetration Testing (Kali Linux)</li>
-                        <li>Ethical Hacking</li>
-                        <li>Network Security</li>
+                         <li>Burp Suite (Repeater, Intruder, Proxy)</li>
+                         <li>SQL Injection & SSTI Exploitation</li>
+                         <li>Network Security & Forensics</li>
                         <li>Cybersecurity Labs</li>
                     </ul>
                 </div>
@@ -237,15 +260,51 @@
                 </div>
                 
                 <div class="project-card">
-                    <h3>Penetration Testing Lab</h3>
-                    <p>A virtual lab for ethical hacking and penetration testing. Includes simulated networks and vulnerable machines for hands-on cybersecurity training.</p>
-                    <div class="project-tech">
-                        <span>VirtualBox</span>
-                        <span>Kali Linux</span>
-                        <span>Metasploitable</span>
-                    </div>
-                    <a href="https://github.com/Wafula206/pentesting_lab" target="_blank" class="btn-small">View on GitHub →</a>
-                </div>
+    <img src="images/proof/pentest-lab-banner.jpg" 
+         alt="Penetration Testing Lab environment showing Kali Linux and Metasploitable 2 virtual machines" 
+         style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px 12px 0 0; margin: -20px -20px 0 -20px; width: calc(100% + 40px);"
+         onerror="this.style.display='none'">
+    
+    <h3>🎯 Penetration Testing Lab</h3>
+    <p>A complete virtual lab for ethical hacking featuring vulnerable machines, network scanning, and web exploitation. Built with VirtualBox, Kali Linux, and Metasploitable 2.</p>
+    
+    <div class="project-tech">
+        <span>Kali Linux</span>
+        <span>Burp Suite</span>
+        <span>Nmap</span>
+        <span>Netcat</span>
+        <span>Nikto</span>
+        <span>CyberChef</span>
+        <span>Zteg</span>
+    </div>
+    
+    <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; margin: 15px 0;">
+        <strong>🔓 Vulnerabilities Exploited:</strong>
+        <ul style="margin: 8px 0 0 20px; padding: 0;">
+            <li>SQL Injection (Union & Blind) – Burp Suite Repeater</li>
+            <li>Server-Side Template Injection (SSTI) – Achieved RCE</li>
+            <li>Network Reconnaissance – Nmap OS fingerprinting</li>
+            <li>Reverse Shell – Netcat on Metasploitable 2</li>
+            <li>Steganography – Hidden data with zteg/steghide</li>
+        </ul>
+    </div>
+    
+    <div style="margin: 15px 0;">
+        <strong>📸 Proof of Work (Click to enlarge):</strong>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px;">
+            <a href="images/proof/sqli-burp.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">🗄️ SQLi</a>
+            <a href="images/proof/nmap-scan.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">🔍 Nmap</a>
+            <a href="images/proof/netcat-shell.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">🔌 Netcat</a>
+            <a href="images/proof/cyberchef.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">🧅 CyberChef</a>
+            <a href="images/proof/ssti-burp.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">⚡ SSTI</a>
+            <a href="images/proof/tryhackme.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">🎯 THM</a>
+        </div>
+    </div>
+    
+    <div class="project-links">
+        <a href="https://github.com/Wafula206/pentesting_lab" target="_blank" class="btn-small">🐛 View on GitHub →</a>
+    </div>
+</div>
                 
                 <div class="project-card">
                     <h3>SmartPre</h3>
