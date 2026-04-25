@@ -188,166 +188,163 @@
     </section>
 
     <!-- ============================================
-         PROJECTS SECTION
-    ============================================ -->
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">My Work</span>
-                <h2>Featured Projects</h2>
-                <p class="section-subtitle">Real solutions to real problems</p>
-            </div>
+     PROJECTS SECTION
+============================================ -->
+<section id="projects" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">My Work</span>
+            <h2>Featured Projects</h2>
+            <p class="section-subtitle">Real solutions to real problems</p>
+        </div>
 
-            <!-- EcoStore Project Card -->
-            <div class="project-card featured">
-                <h3>🌿 EcoStore - Sustainable E-Commerce Platform</h3>
-                <p>A fully functional e-commerce platform featuring product browsing, shopping cart, user authentication, and secure checkout. Built with Django REST Framework and integrated with external APIs for payment processing and product data.</p>
-                
+        <!-- EcoStore Project Card -->
+        <div class="project-card featured">
+            <h3>🌿 EcoStore - Sustainable E-Commerce Platform</h3>
+            <p>A fully functional e-commerce platform featuring product browsing, shopping cart, user authentication, and secure checkout. Built with Django REST Framework and integrated with external APIs for payment processing and product data.</p>
+            
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Django</span>
+                <span>Django REST Framework</span>
+                <span>HTML/CSS/JS</span>
+                <span>APIs</span>
+                <span>Render</span>
+            </div>
+            
+            <div class="project-links">
+                <a href="https://github.com/Wafula206/ecostore" target="_blank" class="btn-small">
+                    <i class="fab fa-github"></i> GitHub →
+                </a>
+                <a href="https://ecostore-xpa3.onrender.com" target="_blank" class="btn-small demo-link">
+                    <i class="fas fa-external-link-alt"></i> Live Demo →
+                </a>
+            </div>
+            
+            <div class="deploy-note">
+                <i class="fas fa-clock"></i> Free hosting: first load may take 30-60 seconds to wake up
+            </div>
+        </div>
+
+        <!-- Savanna Bites - Restaurant Website -->
+        <div class="project-card">
+            <h3>🍽️ Savanna Bites - Restaurant Website</h3>
+            <p>A complete, responsive restaurant website featuring online menu display, reservation form, Google Maps integration, and FAQ section. Built as a client-ready template for small businesses and restaurants.</p>
+            <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+                <span>Netlify</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Wafula206/restaurant-website-sample" target="_blank" class="btn-small">
+                    <i class="fab fa-github"></i> GitHub →
+                </a>
+                <a href="https://savanahotel.netlify.app" target="_blank" class="btn-small demo-link">
+                    <i class="fas fa-external-link-alt"></i> Live Demo →
+                </a>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Employee Management System -->
+            <div class="project-card">
+                <h3>👥 Employee Management System</h3>
+                <p>A web app for managing employee records, attendance, and payroll. Built with Python, Django, and PostgreSQL. Features secure authentication and user-friendly dashboards.</p>
                 <div class="project-tech">
                     <span>Python</span>
                     <span>Django</span>
-                    <span>Django REST Framework</span>
-                    <span>HTML/CSS/JS</span>
-                    <span>APIs</span>
-                    <span>Render</span>
+                    <span>PostgreSQL</span>
                 </div>
-                
-                <div class="project-links">
-                    <a href="https://github.com/Wafula206/ecostore" target="_blank" class="btn-small">
-                        <i class="fab fa-github"></i> GitHub →
-                    </a>
-                    <a href="https://ecostore-xpa3.onrender.com" target="_blank" class="btn-small demo-link">
-                        <i class="fas fa-external-link-alt"></i> Live Demo →
-                    </a>
-                </div>
-                
-                <div class="deploy-note">
-                    <i class="fas fa-clock"></i> Free hosting: first load may take 30-60 seconds to wake up
-                </div>
+                <a href="https://github.com/Wafula206/Employee_management_system" target="_blank" class="btn-small">View on GitHub →</a>
             </div>
-
-            <!-- Savanna Bites - Restaurant Website -->
+            
+            <!-- Penetration Testing Lab (No banner image) -->
             <div class="project-card">
-                <h3>🍽️ Savanna Bites - Restaurant Website</h3>
-                <p>A complete, responsive restaurant website featuring online menu display, reservation form, Google Maps integration, and FAQ section. Built as a client-ready template for small businesses and restaurants.</p>
+                <h3>🎯 Penetration Testing Lab</h3>
+                <p>A complete virtual lab for ethical hacking featuring vulnerable machines, network scanning, and web exploitation. Built with VirtualBox, Kali Linux, and Metasploitable 2.</p>
+                
                 <div class="project-tech">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                    <span>Responsive Design</span>
-                    <span>Netlify</span>
+                    <span>Kali Linux</span>
+                    <span>Burp Suite</span>
+                    <span>Nmap</span>
+                    <span>Netcat</span>
+                    <span>Nikto</span>
+                    <span>CyberChef</span>
+                    <span>Zteg</span>
                 </div>
+                
+                <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; margin: 15px 0;">
+                    <strong>🔓 Vulnerabilities Exploited:</strong>
+                    <ul style="margin: 8px 0 0 20px; padding: 0;">
+                        <li>SQL Injection (Union & Blind) – Burp Suite Repeater</li>
+                        <li>Server-Side Template Injection (SSTI) – Achieved RCE</li>
+                        <li>Network Reconnaissance – Nmap OS fingerprinting</li>
+                        <li>Reverse Shell – Netcat on Metasploitable 2</li>
+                        <li>Steganography – Hidden data with zteg/steghide</li>
+                    </ul>
+                </div>
+                
+                <!-- PDF Report Box -->
+                <div class="report-box">
+                    <div class="report-header">
+                        <i class="fas fa-file-pdf" style="color: #dc3545; font-size: 20px;"></i>
+                        <strong style="margin-left: 8px;">Featured Security Report</strong>
+                    </div>
+                    <p class="report-description">Complete SQL Injection attack chain on OWASP Juice Shop – including JWT analysis, MD5 cracking, and remediation steps.</p>
+                    
+                    <div style="margin: 12px 0;">
+                        <strong style="font-size: 13px;">🛠️ Tools Used:</strong>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
+                            <span class="tool-badge-pdf">Burp Suite</span>
+                            <span class="tool-badge-pdf">CyberChef</span>
+                            <span class="tool-badge-pdf">CrackStation</span>
+                            <span class="tool-badge-pdf">Docker</span>
+                            <span class="tool-badge-pdf">OWASP Juice Shop</span>
+                            <span class="tool-badge-pdf">Kali Linux</span>
+                            <span class="tool-badge-pdf">JWT</span>
+                            <span class="tool-badge-pdf">MD5 Cracking</span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin: 12px 0;">
+                        <strong style="font-size: 13px;">⚡ Techniques:</strong>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
+                            <span class="tech-badge-pdf">SQL Injection</span>
+                            <span class="tech-badge-pdf">Auth Bypass</span>
+                            <span class="tech-badge-pdf">JWT Analysis</span>
+                            <span class="tech-badge-pdf">Hash Cracking</span>
+                            <span class="tech-badge-pdf">Credential Reuse</span>
+                            <span class="tech-badge-pdf">Parameterized Queries</span>
+                        </div>
+                    </div>
+                    
+                    <a href="assets/juice_shop_sql_injection.pdf" target="_blank" class="btn-report">
+                        <i class="fas fa-download"></i> Download Full Report (PDF)
+                    </a>
+                </div>
+                
                 <div class="project-links">
-                    <a href="https://github.com/Wafula206/restaurant-website-sample" target="_blank" class="btn-small">
-                        <i class="fab fa-github"></i> GitHub →
-                    </a>
-                    <a href="https://savanahotel.netlify.app" target="_blank" class="btn-small demo-link">
-                        <i class="fas fa-external-link-alt"></i> Live Demo →
-                    </a>
+                    <a href="https://github.com/Wafula206/pentesting_lab" target="_blank" class="btn-small">🐛 View on GitHub →</a>
                 </div>
             </div>
-
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Employee Management System</h3>
-                    <p>A web app for managing employee records, attendance, and payroll. Built with Python, Django, and PostgreSQL. Features secure authentication and user-friendly dashboards.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Django</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                    <a href="https://github.com/Wafula206/Employee_management_system" target="_blank" class="btn-small">View on GitHub →</a>
+            
+            <!-- Loan Approval System -->
+            <div class="project-card">
+                <h3>💰 Loan Approval System</h3>
+                <p>A machine learning-based system for automating loan approval decisions. Analyzes applicant data to predict approval outcomes with 85% accuracy.</p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Scikit-learn</span>
+                    <span>Pandas</span>
+                    <span>Flask</span>
                 </div>
-                
-                <div class="project-card">
-    <img src="images/proof/pentest-lab-banner.jpg" 
-         alt="Penetration Testing Lab environment showing Kali Linux and Metasploitable 2 virtual machines" 
-         style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px 12px 0 0; margin: -20px -20px 0 -20px; width: calc(100% + 40px);"
-         onerror="this.style.display='none'">
-    
-    <h3>🎯 Penetration Testing Lab</h3>
-    <p>A complete virtual lab for ethical hacking featuring vulnerable machines, network scanning, and web exploitation. Built with VirtualBox, Kali Linux, and Metasploitable 2.</p>
-    
-    <div class="project-tech">
-        <span>Kali Linux</span>
-        <span>Burp Suite</span>
-        <span>Nmap</span>
-        <span>Netcat</span>
-        <span>Nikto</span>
-        <span>CyberChef</span>
-        <span>Zteg</span>
-    </div>
-    
-    <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; margin: 15px 0;">
-        <strong>🔓 Vulnerabilities Exploited:</strong>
-        <ul style="margin: 8px 0 0 20px; padding: 0;">
-            <li>SQL Injection (Union & Blind) – Burp Suite Repeater</li>
-            <li>Server-Side Template Injection (SSTI) – Achieved RCE</li>
-            <li>Network Reconnaissance – Nmap OS fingerprinting</li>
-            <li>Reverse Shell – Netcat on Metasploitable 2</li>
-            <li>Steganography – Hidden data with zteg/steghide</li>
-        </ul>
-    </div>
-    
-    <div style="margin: 15px 0;">
-        <strong>📸 Proof of Work (Click to enlarge):</strong>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px;">
-            <a href="images/proof/sqli-burp.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">🗄️ SQLi</a>
-            <a href="images/proof/nmap-scan.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">🔍 Nmap</a>
-            <a href="images/proof/netcat-shell.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">🔌 Netcat</a>
-            <a href="images/proof/cyberchef.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">🧅 CyberChef</a>
-            <a href="images/proof/ssti-burp.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">⚡ SSTI</a>
-            <a href="images/proof/tryhackme.jpg" target="_blank" style="font-size: 12px; text-align: center; text-decoration: none; color: #007bff;">🎯 THM</a>
-        </div>
-    </div>
-    
-    <div class="project-links">
-        <a href="https://github.com/Wafula206/pentesting_lab" target="_blank" class="btn-small">🐛 View on GitHub →</a>
-    </div>
-</div>
-                
-                <div class="project-card">
-                    <h3>SmartPre</h3>
-                    <p>An educational platform for revision of learning materials. Enables educators to upload content and students to access quizzes and resources.</p>
-                    <div class="project-tech">
-                        <span>HTML/CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <a href="https://github.com/Wafula206/smartprep" target="_blank" class="btn-small">View on GitHub →</a>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Loan Approval System</h3>
-                    <p>A machine learning-based system for automating loan approval decisions. Analyzes applicant data to predict approval outcomes.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Machine Learning</span>
-                    </div>
-                    <a href="https://github.com/Wafula206/loan_approval" target="_blank" class="btn-small">View on GitHub →</a>
-                </div>
-                
-                <div class="project-card">
-                    <h3>School Management System</h3>
-                    <p>A system for managing school operations, including student records, classes, and staff. Streamlines administrative tasks.</p>
-                    <div class="project-tech">
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                    </div>
-                    <a href="https://github.com/Wafula206/school-management-system" target="_blank" class="btn-small">View on GitHub →</a>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Chatbot</h3>
-                    <p>An interactive chatbot built with Python for answering user queries and automating simple tasks.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>NLP</span>
-                    </div>
-                    <a href="https://github.com/Wafula206/chatbot" target="_blank" class="btn-small">View on GitHub →</a>
-                </div>
+                <a href="https://github.com/Wafula206/loan_approval" target="_blank" class="btn-small">View on GitHub →</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ============================================
          SERVICES SECTION
