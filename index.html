@@ -324,11 +324,40 @@
                         <i class="fas fa-download"></i> Download Full Report (PDF)
                     </a>
                 </div>
-                
-                <div class="project-links">
-                    <a href="https://github.com/Wafula206/pentesting_lab" target="_blank" class="btn-small">🐛 View on GitHub →</a>
-                </div>
-            </div>
+               <!-- Network Forensics - Wireshark CTF Box -->
+<div class="report-box" style="margin-top: 20px; background: #1a1a2e; border-left: 4px solid #00d8ff;">
+    <div class="report-header">
+        <i class="fas fa-shield-alt" style="color: #00d8ff; font-size: 20px;"></i>
+        <strong style="margin-left: 8px; color: #fff;">🔍 Network Forensics - Wireshark CTF</strong>
+    </div>
+    <p class="report-description" style="color: #ccc;">
+        Analyzed a packet capture containing unencrypted HTTP traffic. Extracted exposed login credentials and identified secure protocols (WireGuard, TLS).
+    </p>
+    
+    <div style="margin: 12px 0;">
+        <strong style="font-size: 13px; color: #fff;">📊 Findings:</strong>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
+            <span class="tech-badge-pdf" style="background: #0f3460; color: #fff;">Exposed Credentials: hello / unencryptedcreds</span>
+            <span class="tech-badge-pdf" style="background: #0f3460; color: #fff;">Insecure Port: 80 (HTTP)</span>
+            <span class="tech-badge-pdf" style="background: #0f3460; color: #fff;">WireGuard VPN: UDP 51820</span>
+            <span class="tech-badge-pdf" style="background: #0f3460; color: #fff;">TLS: TCP 443</span>
+        </div>
+    </div>
+    
+    <div style="margin: 12px 0;">
+        <strong style="font-size: 13px; color: #fff;">🛠️ Skills Demonstrated:</strong>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
+            <span class="tool-badge-pdf" style="background: #16213e;">HTTP Traffic Analysis</span>
+            <span class="tool-badge-pdf" style="background: #16213e;">TCP Stream Extraction</span>
+            <span class="tool-badge-pdf" style="background: #16213e;">Protocol Identification</span>
+            <span class="tool-badge-pdf" style="background: #16213e;">Wireshark Filters</span>
+        </div>
+    </div>
+    
+    <a href="assets/BreakChains.pdf" target="_blank" class="btn-report" style="background: #00d8ff; color: #1a1a2e;">
+        <i class="fas fa-file-pdf"></i> Download Wireshark Forensics Report (PDF)
+    </a>
+</div>
             
             <!-- Loan Approval System -->
             <div class="project-card">
