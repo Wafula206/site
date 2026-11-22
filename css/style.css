@@ -733,7 +733,9 @@ footer p {
 .mb-3 { margin-bottom: 1.5rem; }
 .mb-4 { margin-bottom: 2rem; }
 
-/* Hero Profile Image */
+/* ============================================
+   HERO PROFILE IMAGE
+============================================ */
 .hero-image {
     position: relative;
     display: inline-block;
@@ -745,6 +747,7 @@ footer p {
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top; /* <-- FIX: Keeps the head in frame */
     border: 4px solid var(--white);
     box-shadow: var(--shadow-xl);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -798,6 +801,7 @@ footer p {
     .hero-profile-img {
         width: 100px;
         height: 100px;
+        object-position: top; /* <-- FIX: Keeps the head in frame on mobile */
     }
     
     .hero-image-badge {
@@ -805,10 +809,10 @@ footer p {
         padding: 0.2rem 0.6rem;
     }
 }
+
 /* ============================================
     LOGO
 ============================================ */
-
 .logo {
     display: flex;
     align-items: center;
